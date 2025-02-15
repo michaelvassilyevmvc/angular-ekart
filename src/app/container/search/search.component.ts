@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent
 {
-  searchText: string = 'Mens wear';
+  searchText: string = '';
+
+  updateSearchText(event: any)
+  {
+    this.searchText = event.target.value;
+  }
 }
